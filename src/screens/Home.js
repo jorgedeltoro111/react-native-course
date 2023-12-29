@@ -1,5 +1,6 @@
-import { View, Text, Button } from 'react-native'
 import React from 'react'
+import { View, Text, Button, SafeAreaView } from 'react-native'
+
 
 export default function Home(props) {
   const {navigation} = props;
@@ -8,9 +9,9 @@ export default function Home(props) {
     navigation.navigate("Settings");
   };
   return (
-    <View>
+    <SafeAreaView>
       <Text>Estamos en Home</Text>
       <Button onPress={goToPage} title='Settings'/>
-    </View>
+    </SafeAreaView>
   );
 }
