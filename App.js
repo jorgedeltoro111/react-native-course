@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import Saludar from './src/components/Saludar';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Curso react native</Text>
-      <Saludar/>
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Text>Curso react native</Text>
+        <Saludar/>
+      </View>
+    </NavigationContainer>
   );
 }
 
