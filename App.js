@@ -1,13 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import Saludar from './src/components/Saludar';
+import NavigationStack from './src/navigation/NavigationStack';
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
-        <Text>Curso react native</Text>
-        <Saludar/>
-      </View>
+      <NavigationStack/>
     </NavigationContainer>
   );
 }
